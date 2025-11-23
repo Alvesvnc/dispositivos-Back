@@ -15,11 +15,17 @@ export interface Time {
 
 // Interface da estrutura de uma turma (classe)
 export interface ClassData {
-    name: string;        
-    times: Time[];       
+    name?: string;        
+    times: Time[];  
+    class: string     
     id?: string;        
 }
-
+export interface SchoolData {
+    name?: string; 
+    courseList?: CourseData[]; 
+    createdAt: string;         
+    id: string;                
+}
 // Interface que representa um aluno
 interface Student {
     name: string;          
